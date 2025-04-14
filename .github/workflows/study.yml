@@ -60,6 +60,11 @@ jobs:
             secret: ${{secrets.JWT_SECRET}}
           EOL
           cat back/src/main/resources/application-secret.yml
+          
+      - name: print-directory
+        run: |
+          ls front
+          ls back/src/main/resources
 
 
 
